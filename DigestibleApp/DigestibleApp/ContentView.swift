@@ -1,16 +1,16 @@
 //
 //  ContentView.swift
-//  Digestible
+//  DigestibleApp
 //
-//  Created by Athul Rajagopal on 2020-08-13.
-//  Copyright © 2020 DigestLabs. All rights reserved.
+//  Created by Noel Thomas on 2020-08-14.
+//  Copyright © 2020 Noel Thomas. All rights reserved.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Test")
+        Text("Hello, World!")
     }
 }
 
