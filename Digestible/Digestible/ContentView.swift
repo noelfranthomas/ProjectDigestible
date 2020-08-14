@@ -10,12 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello SwiftUI")
+            .font(.title)
+            .foregroundColor(.green)
     }
 }
 
+//The below structure is for previewing and development only
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
