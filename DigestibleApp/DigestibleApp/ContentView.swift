@@ -8,22 +8,57 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 20) {
-                ForEach(0..<10) {
-                    Text("Item \($0)")
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
-                        .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - (0.1*UIScreen.main.bounds.size.height))
+struct Cell {
+    var id = UUID()
+    var headline, text, imageName: String
+}
 
-                        .background(Color.red)
-                }
-            }
+
+struct ContentView: View {
+    
+    let testData = [
+        Cell(headline:"Hello World!", text: "Lorem ipsum dolor...", imageName: "Tim")
+    ]
+    
+    var body: some View {
+        ScrollView{
+                CellView()
         }
     }
 }
+
+struct CellView: View {
+    var body: some View {
+        Image("Tim")
+        .resizable()
+        .frame(width: UIScreen.main.bounds.width, height: 200)
+        .contextMenu {
+            Button(action: {
+                // Open actionsheeet to share
+            }) {
+                Text("Share")
+                Image(systemName: "square.and.arrow.up")
+                    .font(Font.title.weight(.light))
+            }
+                
+            Button(action: {
+                // Save
+            }) {
+                Text("Save")
+                Image(systemName: "tray.and.arrow.down")
+            }
+            
+            Button(action: {
+                // Like
+            }) {
+                Text("Like")
+                Image(systemName: "suit.heart")
+            }
+            
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
