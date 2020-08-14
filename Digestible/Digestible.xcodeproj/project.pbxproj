@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C745ED5924E7174300AFF845 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C745ED5824E7174300AFF845 /* MapView.swift */; };
 		C789F30524E6042B005FB739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F30424E6042B005FB739 /* AppDelegate.swift */; };
 		C789F30724E6042B005FB739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F30624E6042B005FB739 /* SceneDelegate.swift */; };
 		C789F30924E6042B005FB739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F30824E6042B005FB739 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 		C789F31124E6042E005FB739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C789F30F24E6042E005FB739 /* LaunchScreen.storyboard */; };
 		C789F31C24E6042E005FB739 /* DigestibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F31B24E6042E005FB739 /* DigestibleTests.swift */; };
 		C789F32724E6042E005FB739 /* DigestibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F32624E6042E005FB739 /* DigestibleUITests.swift */; };
+		C789F33824E70EC7005FB739 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F33724E70EC7005FB739 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C745ED5824E7174300AFF845 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C789F30124E6042B005FB739 /* Digestible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digestible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C789F30424E6042B005FB739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C789F30624E6042B005FB739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		C789F32224E6042E005FB739 /* DigestibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigestibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C789F32624E6042E005FB739 /* DigestibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestibleUITests.swift; sourceTree = "<group>"; };
 		C789F32824E6042E005FB739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C789F33724E70EC7005FB739 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				C789F30424E6042B005FB739 /* AppDelegate.swift */,
 				C789F30624E6042B005FB739 /* SceneDelegate.swift */,
+				C789F33724E70EC7005FB739 /* CircleImage.swift */,
 				C789F30824E6042B005FB739 /* ContentView.swift */,
+				C745ED5824E7174300AFF845 /* MapView.swift */,
 				C789F30A24E6042E005FB739 /* Assets.xcassets */,
 				C789F30F24E6042E005FB739 /* LaunchScreen.storyboard */,
 				C789F31224E6042E005FB739 /* Info.plist */,
@@ -268,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C789F30524E6042B005FB739 /* AppDelegate.swift in Sources */,
+				C789F33824E70EC7005FB739 /* CircleImage.swift in Sources */,
+				C745ED5924E7174300AFF845 /* MapView.swift in Sources */,
 				C789F30724E6042B005FB739 /* SceneDelegate.swift in Sources */,
 				C789F30924E6042B005FB739 /* ContentView.swift in Sources */,
 			);
