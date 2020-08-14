@@ -10,7 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 20) {
+                ForEach(0..<10) {
+                    Text("Item \($0)")
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - (0.1*UIScreen.main.bounds.size.height))
+
+                        .background(Color.red)
+                }
+            }
+        }
     }
 }
 
