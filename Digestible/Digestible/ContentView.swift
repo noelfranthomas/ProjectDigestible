@@ -19,9 +19,9 @@ struct ContentView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 620)
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempor odio...")
+            /*Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempor odio...")
                 .fontWeight(.semibold)
-                .padding()
+                .padding()*/
             Spacer()
         }
     }

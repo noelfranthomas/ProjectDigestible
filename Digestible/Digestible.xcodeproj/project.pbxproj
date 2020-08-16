@@ -17,6 +17,7 @@
 		C789F31C24E6042E005FB739 /* DigestibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F31B24E6042E005FB739 /* DigestibleTests.swift */; };
 		C789F32724E6042E005FB739 /* DigestibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F32624E6042E005FB739 /* DigestibleUITests.swift */; };
 		C789F33824E70EC7005FB739 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F33724E70EC7005FB739 /* CircleImage.swift */; };
+		C7A763C824E9D4AE002EB3CE /* ImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A763C724E9D4AE002EB3CE /* ImageContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C789F32624E6042E005FB739 /* DigestibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestibleUITests.swift; sourceTree = "<group>"; };
 		C789F32824E6042E005FB739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C789F33724E70EC7005FB739 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C7A763C724E9D4AE002EB3CE /* ImageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C789F30F24E6042E005FB739 /* LaunchScreen.storyboard */,
 				C789F31224E6042E005FB739 /* Info.plist */,
 				C789F30C24E6042E005FB739 /* Preview Content */,
+				C7A763C724E9D4AE002EB3CE /* ImageContainer.swift */,
 			);
 			path = Digestible;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				C745ED5924E7174300AFF845 /* MapView.swift in Sources */,
 				C789F30724E6042B005FB739 /* SceneDelegate.swift in Sources */,
 				C789F30924E6042B005FB739 /* ContentView.swift in Sources */,
+				C7A763C824E9D4AE002EB3CE /* ImageContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
