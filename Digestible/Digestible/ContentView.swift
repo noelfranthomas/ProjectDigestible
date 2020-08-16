@@ -10,20 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("DIGESTIBLE")
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.orange)
-            Image("blm")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 620)
-            /*Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempor odio...")
-                .fontWeight(.semibold)
-                .padding()*/
-            Spacer()
+        ZStack {
+            VStack {
+                Text("DIGESTIBLE")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.orange)
+                ImageContainer()
+                /*Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempor odio...")
+                    .fontWeight(.semibold)
+                    .padding()*/
+                Spacer()
+            }
+            .background(Color.gray)
         }
+        
     }
 }
 

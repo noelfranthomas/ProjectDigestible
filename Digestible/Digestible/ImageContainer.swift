@@ -15,13 +15,30 @@ struct ImageContainer: View {
                 .resizable()
                 .frame(height: 620)
                 .cornerRadius(10)
-                .padding()
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(Color.white)
                 .frame(height: 100)
-                .padding()
                 .offset(y: -260)
-        }
+            HStack {
+                VStack (alignment: .leading) {
+                        Text ("Black Lives Matter May Be the Largest Movement in US History")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        HStack{
+                            Image ("nytimes")
+                                .resizable()
+                                .clipShape(Circle())
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 40)
+                            Text ("New York Times")
+                                .font(.headline)
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                .offset(x: 5, y: -260)
+                Spacer()
+            }
+        }.padding()
     }
 }
 
