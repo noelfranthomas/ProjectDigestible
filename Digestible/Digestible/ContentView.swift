@@ -17,7 +17,9 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.orange)
-                ImageContainer()
+                ScrollView {
+                    ImageContainer()
+                }
                 /*Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempor odio...")
                     .fontWeight(.semibold)
                     .padding()*/

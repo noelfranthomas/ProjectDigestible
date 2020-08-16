@@ -39,7 +39,7 @@ struct ImageContainer: View {
                 .offset(x: 5, y: -260)
                 Spacer()
             }
-        }.padding(5)
+        }.padding()
     }
 }
 

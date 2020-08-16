@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C76CC80024E9E32D00C589E0 /* ArticleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76CC7FF24E9E32D00C589E0 /* ArticleContainer.swift */; };
 		C789F30524E6042B005FB739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F30424E6042B005FB739 /* AppDelegate.swift */; };
 		C789F30724E6042B005FB739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F30624E6042B005FB739 /* SceneDelegate.swift */; };
 		C789F30924E6042B005FB739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789F30824E6042B005FB739 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C76CC7FF24E9E32D00C589E0 /* ArticleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleContainer.swift; sourceTree = "<group>"; };
 		C789F30124E6042B005FB739 /* Digestible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digestible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C789F30424E6042B005FB739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C789F30624E6042B005FB739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				C789F30424E6042B005FB739 /* AppDelegate.swift */,
 				C789F30624E6042B005FB739 /* SceneDelegate.swift */,
 				C789F30824E6042B005FB739 /* ContentView.swift */,
+				C76CC7FF24E9E32D00C589E0 /* ArticleContainer.swift */,
 				C7A763C724E9D4AE002EB3CE /* ImageContainer.swift */,
 				C789F30A24E6042E005FB739 /* Assets.xcassets */,
 				C789F30F24E6042E005FB739 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				C789F30724E6042B005FB739 /* SceneDelegate.swift in Sources */,
 				C789F30924E6042B005FB739 /* ContentView.swift in Sources */,
 				C7A763C824E9D4AE002EB3CE /* ImageContainer.swift in Sources */,
+				C76CC80024E9E32D00C589E0 /* ArticleContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
