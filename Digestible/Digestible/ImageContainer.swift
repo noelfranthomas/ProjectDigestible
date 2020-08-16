@@ -24,6 +24,7 @@ struct ImageContainer: View {
                         Text ("Black Lives Matter May Be the Largest Movement in US History")
                             .font(.headline)
                             .fontWeight(.bold)
+                            .lineLimit(2)
                         HStack{
                             Image ("nytimes")
                                 .resizable()
@@ -38,7 +39,7 @@ struct ImageContainer: View {
                 .offset(x: 5, y: -260)
                 Spacer()
             }
-        }.padding()
+        }.padding(5)
     }
 }
 

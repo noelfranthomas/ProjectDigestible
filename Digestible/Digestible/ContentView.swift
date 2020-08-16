@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
+            Rectangle().foregroundColor(Color.gray).edgesIgnoringSafeArea(.all)
             VStack {
                 Text("DIGESTIBLE")
                     .font(.largeTitle)
@@ -22,7 +23,6 @@ struct ContentView: View {
                     .padding()*/
                 Spacer()
             }
-            .background(Color.gray)
         }
         
     }
