@@ -10,38 +10,37 @@ import SwiftUI
 
 struct ImageContainer: View {
     var body: some View {
-        ScrollView {
-            ZStack {
-                Image ("blm")
-                    .resizable()
-                    .frame(height: 620)
-                    .cornerRadius(10)
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.white)
-                    .frame(height: 100)
-                    .offset(y: -260)
-                HStack {
-                    VStack (alignment: .leading) {
-                            Text ("Black Lives Matter May Be the Largest Movement in US History")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .lineLimit(2)
-                            HStack{
-                                Image ("nytimes")
-                                    .resizable()
-                                    .clipShape(Circle())
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(height: 40)
-                                Text ("New York Times")
-                                    .font(.headline)
-                                    .foregroundColor(Color.gray)
-                            }
-                        }
-                    .offset(x: 5, y: -260)
-                    Spacer()
+        ZStack {
+            Image ("blm")
+                .resizable()
+                .frame(height: 620)
+                .cornerRadius(10)
+            RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(Color.white)
+                .frame(height: 100)
+                .offset(y: -260)
+            HStack {
+                VStack (alignment: .leading) {
+                    Text ("Black Lives Matter May Be the Largest Movement in US History")
+                        .font(.headline)
+                        .foregroundColor(Color.black)
+                        .fontWeight(.bold)
+                        .lineLimit(2)
+                    HStack{
+                        Image ("nytimes")
+                            .resizable()
+                            .clipShape(Circle())
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 40)
+                        Text ("New York Times")
+                            .font(.headline)
+                            .foregroundColor(Color.gray)
+                    }
                 }
-            }.padding()
-        }
+                .offset(x: 5, y: -260)
+                Spacer()
+            }
+        }.padding()
     }
 }
 

@@ -26,7 +26,9 @@ struct ContentView: View {
                         ArticleContainer()
                     }
                     else {
-                        ImageContainer()
+                        ScrollView {
+                            ImageContainer()
+                        }
                     }
                 }
                 .buttonStyle(PlainButtonStyle())
