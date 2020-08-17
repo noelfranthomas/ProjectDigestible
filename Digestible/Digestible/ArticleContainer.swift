@@ -29,7 +29,8 @@ struct ArticleContainer: View {
                     .font(.title)
             }.padding()
         }
-        .overlay(RoundedRectangle(cornerRadius: 10).stroke()).padding(5)
+        .background(RoundedRectangle(cornerRadius: 10).stroke()).padding(5)
+        
     }
 }
 
