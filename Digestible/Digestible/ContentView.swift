@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             ZStack {
-                Rectangle().foregroundColor(Color.gray).edgesIgnoringSafeArea(.all)
+                Color.gray.edgesIgnoringSafeArea(.all)
                 VStack {
                     Text("DIGESTIBLE")
                         .font(.largeTitle)
@@ -64,13 +64,13 @@ struct ContentView: View {
 
 struct RedView: View {
     var body : some View {
-        Color.red
+        Color.red.edgesIgnoringSafeArea(.all)
     }
 }
 
 struct BlueView: View {
     var body : some View {
-        Color.blue
+        Color.blue.edgesIgnoringSafeArea(.all)
     }
 }
 
