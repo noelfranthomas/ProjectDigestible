@@ -50,7 +50,7 @@ struct ContentView: View {
                 Image(systemName: "text.bubble")
                 Text("Forums")
             }
-            RedView()
+            BlueView()
             .tabItem{
                 Image(systemName: "person.circle")
                 Text("Profile")
@@ -65,6 +65,12 @@ struct ContentView: View {
 struct RedView: View {
     var body : some View {
         Color.red
+    }
+}
+
+struct BlueView: View {
+    var body : some View {
+        Color.blue
     }
 }
 
