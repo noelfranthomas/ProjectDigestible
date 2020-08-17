@@ -27,8 +27,8 @@ struct ArticleContainer: View {
                     .font(.title)
                 Text("These figures would make the recent protests the largest movement in the country’s history, according to interviews with scholars and crowd-counting experts.")
                     .font(.title)
-                }.padding().background(Color.white).cornerRadius(10)
-        }
+                }.padding()
+        }.background(Color.white).cornerRadius(10)
         .overlay(RoundedRectangle(cornerRadius: 10).stroke()).padding(5)
     }
 }
