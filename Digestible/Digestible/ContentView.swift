@@ -13,42 +13,59 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-                           ZStack {
-                               Rectangle().foregroundColor(Color.gray).edgesIgnoringSafeArea(.all)
-                               VStack {
-                                   Text("DIGESTIBLE")
-                                       .font(.largeTitle)
-                                       .fontWeight(.heavy)
-                                       .foregroundColor(Color.orange)
-                                   Button(action: {
-                                       self.isTapped.toggle()
-                                   }) {
-                                       if isTapped {
-                                           ArticleContainer()
-                                       }
-                                       else {
-                                           ScrollView {
-                                               ImageContainer()
-                                           }
-                                       }
-                                   }
-                                   .buttonStyle(PlainButtonStyle())
-                                Spacer()
-                               }
-                           }
-                               .tabItem {
-                                   Image(systemName: "phone.fill")
-                                   Text("First Tab")
-                           }
-                           Text("The content of the second view")
-                               .tabItem {
-                                   Image(systemName: "tv.fill")
-                                   Text("Second Tab")
-                           }
-                       }
-
+            ZStack {
+                Rectangle().foregroundColor(Color.gray).edgesIgnoringSafeArea(.all)
+                VStack {
+                    Text("DIGESTIBLE")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.orange)
+                    Button(action: {
+                        self.isTapped.toggle()
+                    }) {
+                        if isTapped {
+                            ArticleContainer()
+                        }
+                        else {
+                            ScrollView {
+                                ImageContainer()
+                            }
+                        }
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    Spacer()
+                }
+            }
+            .tabItem {
+                Image(systemName: "house.fill")
+                Text("Home")
+            }
+            Text("The content of the second view")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
+            }
+            RedView()
+            .tabItem{
+                Image(systemName: "text.bubble")
+                Text("Forums")
+            }
+            RedView()
+            .tabItem{
+                Image(systemName: "person.circle")
+                Text("Profile")
+            }
+            
+        }
+        
     }
     
+}
+
+struct RedView: View {
+    var body : some View {
+        Color.red
+    }
 }
 
 //The below structure is for previewing and development only
