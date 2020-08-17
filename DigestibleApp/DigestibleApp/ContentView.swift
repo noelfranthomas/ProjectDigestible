@@ -11,16 +11,136 @@ import SwiftUI
 
 
 struct ContentView: View {
-    
     var body: some View {
-        ScrollView{
-            ZCardView()
-            
+        OuterView()
+        .background(Color.red)
+        .coordinateSpace(name: "Custom")
+    }
+}
+        
+       
+
+struct OuterView: View {
+    var body: some View {
+        VStack {
+            Text("Top")
+            InnerView()
+                .background(Color.green)
+            Text("Bottom")
+        }
+    }
+}
+
+struct InnerView: View {
+    var body: some View {
+        HStack {
+            Text("Left")
+            GeometryReader { geo in
+                Text("Center")
+                    .background(Color.blue)
+                    .onTapGesture {
+                        print("Global center: \(geo.frame(in: .global).midX) x \(geo.frame(in: .global).midY)")
+                        print("Custom center: \(geo.frame(in: .named("Custom")).midX) x \(geo.frame(in: .named("Custom")).midY)")
+                        print("Local center: \(geo.frame(in: .local).midX) x \(geo.frame(in: .local).midY)")
+                    }
+            }
+            .background(Color.orange)
+            Text("Right")
         }
     }
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let articleContent =
+
+"""
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum.
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+"""
+        
+struct StretchyHeader : View {
+    var body: some View {
+            ScrollView(showsIndicators: false) {
+                GeometryReader { geometry in
+                    ZStack {
+                        if geometry.frame(in: .global).minY <= 0 {
+                            Image("Tim")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                            .offset(y: geometry.frame(in: .global).minY/9)
+                            .clipped()
+                        } else {
+                            Image("Tim")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: geometry.size.width, height: geometry.size.height + geometry.frame(in: .global).minY)
+                                .clipped()
+                                .offset(y: -geometry.frame(in: .global).minY)
+                        }
+                    }
+                }
+                .frame(height: 300)
+            }
+            .edgesIgnoringSafeArea(.top)
+        }
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 struct ZCardView : View {
     
     
@@ -72,7 +192,6 @@ struct FrontCardView : View {
                     .frame(width: UIScreen.main.bounds.width - 10, height: self.click ? UIScreen.main.bounds.height - 50 : 600)
                     
                     .clipped()
-                    //.if(click) { $0.position(CGPoint(x: UIScreen.main.bounds.width*0.5, y:UIScreen.main.bounds.height*0.5))}
                     .shadow(radius: self.click ? 5 : 0, x: self.click ? 10 : 0, y: self.click ? 10 : 0)
                     .rotationEffect(Angle(degrees: Double(self.angle)))
                     .offset(x: self.click ? self.offset.width : .zero, y: self.click ? self.offset.height : .zero)
@@ -87,15 +206,6 @@ struct FrontCardView : View {
         }
     }
 }
-
-extension View {
-    func `if`<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> TupleView<(Self?, Content?)> {
-        if conditional { return TupleView((nil, content(self))) }
-        else { return TupleView((self, nil)) }
-    }
-}
-
-
 
 struct SCardView : View {
     
@@ -137,8 +247,6 @@ struct SCardView : View {
         }
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
