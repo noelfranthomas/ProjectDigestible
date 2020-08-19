@@ -59,6 +59,6 @@ struct TextOverlay: View {
 
 struct FeatureArticle_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureArticle(article: landmarkData[0])
+        FeatureArticle(article: articleData[0])
     }
 }

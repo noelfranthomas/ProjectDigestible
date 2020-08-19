@@ -36,6 +36,6 @@ struct ArticleReader: View {
 
 struct ArticleReader_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleReader(article: landmarkData[0])
+        ArticleReader(article: articleData[0])
     }
 }
