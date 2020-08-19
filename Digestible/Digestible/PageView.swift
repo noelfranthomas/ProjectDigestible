@@ -20,16 +20,14 @@ struct PageView<Page: View>: View {
         ZStack(alignment: .bottomTrailing) {
             PageViewController(controllers: viewControllers, currentPage: $currentPage)
             PageControl(numberOfPages: viewControllers.count, currentPage: $currentPage)
-            .padding(.trailing)
+                .padding(.trailing)
         }
     }
 }
 
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
-        PageView([
-        Image("nytimes"),
-        Image("nytimes")
-        ])
+        PageView(features.map { FeatureArticle(article: $0) })
+        .aspectRatio(3 / 2, contentMode: .fit)
     }
 }

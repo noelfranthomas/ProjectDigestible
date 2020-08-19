@@ -50,7 +50,7 @@ struct ContentView: View {
                 Image(systemName: "text.bubble")
                 Text("Forums")
             }
-            PageView([Image("nytimes"), Image("nytimes")])
+            BlueView()
             .tabItem{
                 Image(systemName: "person.circle")
                 Text("Profile")
