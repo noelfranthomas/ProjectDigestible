@@ -27,6 +27,8 @@ struct PageView<Page: View>: View {
 
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
-        PageView(landmarkData.map { FeatureArticle(article: $0) })
+        PageViewer()
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke())
+            .padding(5)
     }
 }

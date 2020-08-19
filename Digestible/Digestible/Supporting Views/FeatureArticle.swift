@@ -1,9 +1,9 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view that shows a featured landmark.
-*/
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ A view that shows a featured landmark.
+ */
 
 import SwiftUI
 
@@ -11,18 +11,21 @@ struct FeatureArticle: View {
     var article: Article
     
     var body: some View {
-        article.image
-            .resizable()
-            .frame(height: 620)
-            .cornerRadius(10)
-            .overlay(TextOverlay(article: article))
-            .padding()
+        ZStack {
+            Color.gray.edgesIgnoringSafeArea(.all)
+            article.image
+                .resizable()
+                .frame(height: 620)
+                .cornerRadius(10)
+                .overlay(TextOverlay(article: article))
+                .shadow(radius: 10)
+        }
     }
 }
 
 struct TextOverlay: View {
     var article: Article
-
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)

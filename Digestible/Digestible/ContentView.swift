@@ -24,7 +24,9 @@ struct ContentView: View {
                         self.isTapped.toggle()
                     }) {
                         if isTapped {
-                            ArticleContainer()
+                            PageViewer()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke())
+                            .padding(5)
                         }
                         else {
                             ScrollView {
