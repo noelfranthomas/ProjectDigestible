@@ -75,7 +75,7 @@ struct BlueView: View {
 
 struct PageViewer: View {
     var body : some View {
-        PageView(features.map { FeatureArticle(article: $0) })
+        PageView(landmarkData.map { FeatureArticle(article: $0) })
         }
     }
 

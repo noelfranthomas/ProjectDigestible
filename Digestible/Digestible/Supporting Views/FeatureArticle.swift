@@ -11,7 +11,7 @@ struct FeatureArticle: View {
     var article: Article
     
     var body: some View {
-        article.featureImage?
+        article.image
             .resizable()
             .frame(height: 620)
             .cornerRadius(10)
@@ -42,7 +42,7 @@ struct TextOverlay: View {
                             .clipShape(Circle())
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 40)
-                        Text(article.state)
+                        Text(article.source)
                             .font(.headline)
                             .foregroundColor(Color.gray)
                     }
@@ -56,6 +56,6 @@ struct TextOverlay: View {
 
 struct FeatureArticle_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureArticle(article: features[0])
+        FeatureArticle(article: landmarkData[0])
     }
 }

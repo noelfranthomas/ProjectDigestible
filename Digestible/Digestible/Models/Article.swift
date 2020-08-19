@@ -13,7 +13,7 @@ struct Article: Hashable, Codable, Identifiable {
     var name: String
     fileprivate var imageName: String
     fileprivate var logoName: String
-    var state: String
+    var source: String
     var category: Category
     var isFavorite: Bool
     var isFeatured: Bool

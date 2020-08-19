@@ -11,7 +11,7 @@ import CoreLocation
 import SwiftUI
 
 let landmarkData: [Article] = load("ArticleData.json")
-let features = landmarkData.filter { $0.isFeatured }
+let features = landmarkData.filter { $0.isFeatured } //filters for featured articles, could be very useful in future
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
