@@ -40,7 +40,7 @@ struct ContentView: View {
                 Image(systemName: "house.fill")
                 Text("Home")
             }
-            Text("The content of the second view")
+            Text("Content of the second view")
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
@@ -50,12 +50,11 @@ struct ContentView: View {
                 Image(systemName: "text.bubble")
                 Text("Forums")
             }
-            BlueView()
+            PageView([Image("nytimes"), Image("nytimes")])
             .tabItem{
                 Image(systemName: "person.circle")
                 Text("Profile")
             }
-            
         }
         
     }

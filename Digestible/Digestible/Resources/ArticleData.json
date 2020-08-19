@@ -1,0 +1,14 @@
+[
+    {
+        "articleName": "Black Lives Matter May Be the Largest Movement in US History",
+        "providerName": "The New York Times"
+        "providerImageName": "nytimes"
+        "authorName": "Larry Buchanan",
+        "date": "July 3, 2020",
+        "content": "The recent Black Lives Matter protests peaked on June 6, when half a million people turned out in nearly 550 places across the United States. That was a single day in more than a month of protests that still continue to today.",
+        "id": 1001,
+        "isFeatured": true,
+        "isTrending": true,
+        "imageName": "blm"
+    }
+]
