@@ -13,34 +13,44 @@ struct FeatureArticle: View {
     var body: some View {
         article.featureImage?
             .resizable()
-            .aspectRatio(3 / 2, contentMode: .fit)
-            .overlay(TextOverlay(landmark: article))
+            .frame(height: 620)
+            .cornerRadius(10)
+            .overlay(TextOverlay(article: article))
+            .padding()
     }
 }
 
 struct TextOverlay: View {
-    var landmark: Article
-    
-    var gradient: LinearGradient {
-        LinearGradient(
-            gradient: Gradient(
-                colors: [Color.black.opacity(0.6), Color.black.opacity(0)]),
-            startPoint: .bottom,
-            endPoint: .center)
-    }
-    
+    var article: Article
+
     var body: some View {
-        ZStack(alignment: .bottomLeading) {
-            Rectangle().fill(gradient)
-            VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .font(.title)
-                    .bold()
-                Text(landmark.state)
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(Color.white)
+                .frame(height: 100)
+                .offset(y: -260)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(article.name)
+                        .font(.headline)
+                        .foregroundColor(Color.black)
+                        .fontWeight(.bold)
+                        .lineLimit(2)
+                    HStack {
+                        article.logo
+                            .resizable()
+                            .clipShape(Circle())
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 40)
+                        Text(article.state)
+                            .font(.headline)
+                            .foregroundColor(Color.gray)
+                    }
+                }
+                Spacer()
             }
-            .padding()
+            .offset(x: 5, y: -260)
         }
-        .foregroundColor(.white)
     }
 }
 

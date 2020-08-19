@@ -12,6 +12,7 @@ struct Article: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     fileprivate var imageName: String
+    fileprivate var logoName: String
     var state: String
     var category: Category
     var isFavorite: Bool
@@ -21,7 +22,7 @@ struct Article: Hashable, Codable, Identifiable {
         guard isFeatured else { return nil }
         
         return Image(
-            ImageStore.loadImage(name: "\(imageName)_feature"),
+            ImageStore.loadImage(name: "\(imageName)"),
             scale: 2,
             label: Text(name))
     }
@@ -37,5 +38,8 @@ struct Article: Hashable, Codable, Identifiable {
 extension Article {
     var image: Image {
         ImageStore.shared.image(name: imageName)
+    }
+    var logo: Image {
+        ImageStore.shared.image(name: logoName)
     }
 }
