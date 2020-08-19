@@ -1,18 +1,18 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
 Abstract:
-The model for an individual landmark.
+The model for an individual article.
 */
 
 import SwiftUI
-import CoreLocation
 
 struct Article: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     fileprivate var imageName: String
     fileprivate var logoName: String
+    var author: String
+    var date: String
+    var text: String
     var source: String
     var category: Category
     var isFavorite: Bool
