@@ -28,6 +28,5 @@ struct PageView<Page: View>: View {
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
         PageView(features.map { FeatureArticle(article: $0) })
-        
     }
 }

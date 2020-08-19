@@ -6,6 +6,9 @@
 //  Copyright © 2020 DigestLabs. All rights reserved.
 //
 
+
+//DEPRECATED FILE, see PageView.swift
+
 import SwiftUI
 
 struct ImageContainer: View {

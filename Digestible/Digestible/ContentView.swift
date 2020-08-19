@@ -40,7 +40,7 @@ struct ContentView: View {
                 Image(systemName: "house.fill")
                 Text("Home")
             }
-            Text("Content of the second view")
+            PageViewer()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
@@ -72,6 +72,12 @@ struct BlueView: View {
         Color.blue.edgesIgnoringSafeArea(.all)
     }
 }
+
+struct PageViewer: View {
+    var body : some View {
+        PageView(features.map { FeatureArticle(article: $0) })
+        }
+    }
 
 //The below structure is for previewing and development only
 struct ContentView_Previews: PreviewProvider {
