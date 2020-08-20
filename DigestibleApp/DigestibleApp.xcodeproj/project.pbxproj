@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74156FF24EC592400F8D993 /* ZCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74156FE24EC592400F8D993 /* ZCardView.swift */; };
 		C7A3F46E24E714A700AE233A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F46D24E714A700AE233A /* AppDelegate.swift */; };
 		C7A3F47024E714A700AE233A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F46F24E714A700AE233A /* SceneDelegate.swift */; };
 		C7A3F47324E714A700AE233A /* DigestibleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F47124E714A700AE233A /* DigestibleApp.xcdatamodeld */; };
@@ -16,6 +17,8 @@
 		C7A3F47D24E714AC00AE233A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A3F47B24E714AC00AE233A /* LaunchScreen.storyboard */; };
 		C7A3F48824E714AC00AE233A /* DigestibleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F48724E714AC00AE233A /* DigestibleAppTests.swift */; };
 		C7A3F49324E714AC00AE233A /* DigestibleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F49224E714AC00AE233A /* DigestibleAppUITests.swift */; };
+		C7C1C54324EE12BE002E4840 /* ContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1C54224EE12BE002E4840 /* ContributionView.swift */; };
+		C7C1C54524EE2BB4002E4840 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1C54424EE2BB4002E4840 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C74156FE24EC592400F8D993 /* ZCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCardView.swift; sourceTree = "<group>"; };
 		C7A3F46A24E714A700AE233A /* DigestibleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigestibleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A3F46D24E714A700AE233A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7A3F46F24E714A700AE233A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		C7A3F48E24E714AC00AE233A /* DigestibleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigestibleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A3F49224E714AC00AE233A /* DigestibleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestibleAppUITests.swift; sourceTree = "<group>"; };
 		C7A3F49424E714AC00AE233A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C1C54224EE12BE002E4840 /* ContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionView.swift; sourceTree = "<group>"; };
+		C7C1C54424EE2BB4002E4840 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				C7A3F46D24E714A700AE233A /* AppDelegate.swift */,
 				C7A3F46F24E714A700AE233A /* SceneDelegate.swift */,
 				C7A3F47424E714A700AE233A /* ContentView.swift */,
+				C7C1C54224EE12BE002E4840 /* ContributionView.swift */,
+				C7C1C54424EE2BB4002E4840 /* ProfileView.swift */,
+				C74156FE24EC592400F8D993 /* ZCardView.swift */,
 				C7A3F47624E714AC00AE233A /* Assets.xcassets */,
 				C7A3F47B24E714AC00AE233A /* LaunchScreen.storyboard */,
 				C7A3F47E24E714AC00AE233A /* Info.plist */,
@@ -270,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C1C54324EE12BE002E4840 /* ContributionView.swift in Sources */,
 				C7A3F47324E714A700AE233A /* DigestibleApp.xcdatamodeld in Sources */,
 				C7A3F46E24E714A700AE233A /* AppDelegate.swift in Sources */,
 				C7A3F47524E714A700AE233A /* ContentView.swift in Sources */,
+				C74156FF24EC592400F8D993 /* ZCardView.swift in Sources */,
+				C7C1C54524EE2BB4002E4840 /* ProfileView.swift in Sources */,
 				C7A3F47024E714A700AE233A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
