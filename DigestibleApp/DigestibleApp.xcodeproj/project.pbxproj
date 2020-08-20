@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71209F524EEE7310058CBED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71209F424EEE7310058CBED /* CardView.swift */; };
+		C71209F724EEE8800058CBED /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71209F624EEE8800058CBED /* Card.swift */; };
+		C71209F924EF053D0058CBED /* ImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71209F824EF053D0058CBED /* ImageContainer.swift */; };
+		C71209FB24EF05550058CBED /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71209FA24EF05550058CBED /* PageView.swift */; };
+		C71209FD24EF05670058CBED /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71209FC24EF05670058CBED /* PageViewController.swift */; };
+		C71209FF24EF057A0058CBED /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71209FE24EF057A0058CBED /* PageControl.swift */; };
+		C7120A0124EF05920058CBED /* ArticleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7120A0024EF05920058CBED /* ArticleContainer.swift */; };
 		C74156FF24EC592400F8D993 /* ZCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74156FE24EC592400F8D993 /* ZCardView.swift */; };
 		C7A3F46E24E714A700AE233A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F46D24E714A700AE233A /* AppDelegate.swift */; };
 		C7A3F47024E714A700AE233A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3F46F24E714A700AE233A /* SceneDelegate.swift */; };
@@ -39,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C71209F424EEE7310058CBED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C71209F624EEE8800058CBED /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C71209F824EF053D0058CBED /* ImageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageContainer.swift; path = "../../../../Desktop/ProjectDigestible-master/Digestible/Digestible/ImageContainer.swift"; sourceTree = "<group>"; };
+		C71209FA24EF05550058CBED /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = "../../../../Desktop/ProjectDigestible-master/Digestible/Digestible/PageView.swift"; sourceTree = "<group>"; };
+		C71209FC24EF05670058CBED /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = "../../../../Desktop/ProjectDigestible-master/Digestible/Digestible/PageViewController.swift"; sourceTree = "<group>"; };
+		C71209FE24EF057A0058CBED /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageControl.swift; path = "../../../../Desktop/ProjectDigestible-master/Digestible/Digestible/PageControl.swift"; sourceTree = "<group>"; };
+		C7120A0024EF05920058CBED /* ArticleContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleContainer.swift; path = "../../../../Desktop/ProjectDigestible-master/Digestible/Digestible/ArticleContainer.swift"; sourceTree = "<group>"; };
 		C74156FE24EC592400F8D993 /* ZCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCardView.swift; sourceTree = "<group>"; };
 		C7A3F46A24E714A700AE233A /* DigestibleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigestibleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A3F46D24E714A700AE233A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +127,14 @@
 				C7C1C54224EE12BE002E4840 /* ContributionView.swift */,
 				C7C1C54424EE2BB4002E4840 /* ProfileView.swift */,
 				C74156FE24EC592400F8D993 /* ZCardView.swift */,
+				C71209F424EEE7310058CBED /* CardView.swift */,
+				C71209F624EEE8800058CBED /* Card.swift */,
 				C7A3F47624E714AC00AE233A /* Assets.xcassets */,
+				C7120A0024EF05920058CBED /* ArticleContainer.swift */,
+				C71209F824EF053D0058CBED /* ImageContainer.swift */,
+				C71209FE24EF057A0058CBED /* PageControl.swift */,
+				C71209FA24EF05550058CBED /* PageView.swift */,
+				C71209FC24EF05670058CBED /* PageViewController.swift */,
 				C7A3F47B24E714AC00AE233A /* LaunchScreen.storyboard */,
 				C7A3F47E24E714AC00AE233A /* Info.plist */,
 				C7A3F47124E714A700AE233A /* DigestibleApp.xcdatamodeld */,
@@ -280,11 +301,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C1C54324EE12BE002E4840 /* ContributionView.swift in Sources */,
+				C71209F724EEE8800058CBED /* Card.swift in Sources */,
 				C7A3F47324E714A700AE233A /* DigestibleApp.xcdatamodeld in Sources */,
+				C71209FF24EF057A0058CBED /* PageControl.swift in Sources */,
+				C71209FD24EF05670058CBED /* PageViewController.swift in Sources */,
 				C7A3F46E24E714A700AE233A /* AppDelegate.swift in Sources */,
 				C7A3F47524E714A700AE233A /* ContentView.swift in Sources */,
 				C74156FF24EC592400F8D993 /* ZCardView.swift in Sources */,
 				C7C1C54524EE2BB4002E4840 /* ProfileView.swift in Sources */,
+				C71209F924EF053D0058CBED /* ImageContainer.swift in Sources */,
+				C71209FB24EF05550058CBED /* PageView.swift in Sources */,
+				C71209F524EEE7310058CBED /* CardView.swift in Sources */,
+				C7120A0124EF05920058CBED /* ArticleContainer.swift in Sources */,
 				C7A3F47024E714A700AE233A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
