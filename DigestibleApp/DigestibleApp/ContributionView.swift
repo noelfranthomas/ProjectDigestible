@@ -31,7 +31,7 @@ struct ContributionView: View {
                     HStack(spacing: 0){
                         ForEach(self.users, id: \.self) { usr in
                              Image(usr)
-                                .frame(width: self.cardWidth, height: 500)
+                                .frame(width: self.cardWidth, height: UIScreen.main.bounds.height * 0.5)
                                 .cornerRadius(10)
                                 .padding(.leading, self.spacing)
                         }
@@ -54,7 +54,7 @@ struct ContributionView: View {
                             withAnimation { self.offset = -(self.toOffset) * CGFloat(self.index) }
                         })
                 )
-            }.frame(height: 500)
+            }.frame(height: UIScreen.main.bounds.height * 0.5)
         }.padding(.vertical, 30).background(Color("DarkGray"))
     }
 }

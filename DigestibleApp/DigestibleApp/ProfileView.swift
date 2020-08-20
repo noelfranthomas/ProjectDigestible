@@ -11,8 +11,7 @@ import SwiftUI
 struct ProfileView : View {
     var body: some View{
         VStack(spacing: 0){
-            Spacer()
-            
+                        
             HStack(alignment: .top, spacing: 0){
                 Image("Tim")
                     .resizable()
@@ -40,7 +39,7 @@ struct ProfileView : View {
             .padding()
             
             Spacer()
-            
+
             HStack{
                 
                 Spacer()
@@ -60,11 +59,9 @@ struct ProfileView : View {
             }
                 .frame(width: UIScreen.main.bounds.width, height: 50)
                 .background(Color("LightGray"))
-            
-            ContributionView()
-        }
-            .edgesIgnoringSafeArea(.bottom)
 
+            ContributionView()
+        }.edgesIgnoringSafeArea(.bottom)
     }
 }
 
