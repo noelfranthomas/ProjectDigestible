@@ -52,7 +52,7 @@ struct ContentView: View {
                 Image(systemName: "text.bubble")
                 Text("Forums")
             }
-            BlueView()
+            ProfileView()
             .tabItem{
                 Image(systemName: "person.circle")
                 Text("Profile")
